@@ -1,0 +1,11 @@
+node[] nd = new node()[];
+for(i in range(1..10)){
+	nd.put(node(("node"+i.toString()), “something”+i, attribute((“sm”+i.toString), “s”)))
+}
+document doc = (document) nd;
+int i = 0;
+while(i < node.length()){
+	node[i] = null;
+    i+=1;
+}
+

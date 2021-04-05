@@ -1,0 +1,10 @@
+document doc = new document('doc.xml');
+node[] nd = document.node;
+if (nd == null){
+	nd = node(‘node_name’);
+}
+else {
+	nd[0].name = ‘name’;
+}
+document.node = nd;
+document.close();
