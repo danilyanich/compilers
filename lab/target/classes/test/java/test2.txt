@@ -1,0 +1,12 @@
+document doc = new document('doc.xml');
+node[10] nd = new node()[10];
+attribute[5] attr = new attribute()[5];
+for(node i in root){
+	i = new attribute(“attr”+num.toString(), num);
+}
+for(node i in root){
+	i = node(“node”+num.toString());
+	i.attribute = attr;
+}
+doc.node = nd;
+doc.close();
